@@ -1,0 +1,1252 @@
+[
+  {
+    "id": "4bae5b61f964a52041a73be3",
+    "name": "Wines Of Wildwood",
+    "location": {
+      "address": "2418 Taylor Rd",
+      "lat": 38.58081522239121,
+      "lng": -90.6273365020752,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58081522239121,
+          "lng": -90.6273365020752
+        }
+      ],
+      "distance": 18,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2418 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d119951735",
+        "name": "Wine Shop",
+        "pluralName": "Wine Shops",
+        "shortName": "Wine Shop",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/food_wineshop_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bc360a1f8219c748fffb510",
+    "name": "One Lucky Mutt",
+    "location": {
+      "address": "2414 Taylor Rd",
+      "crossStreet": "(Manchester)",
+      "lat": 38.58127490294978,
+      "lng": -90.62694820243829,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58127490294978,
+          "lng": -90.62694820243829
+        }
+      ],
+      "distance": 61,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2414 Taylor Rd ((Manchester))",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d100951735",
+        "name": "Pet Store",
+        "pluralName": "Pet Stores",
+        "shortName": "Pet Store",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/pet_store_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4e26e366e4cd60a2c6299f9d",
+    "name": "Redbox",
+    "location": {
+      "address": "2460 Taylor Rd",
+      "lat": 38.58062674085465,
+      "lng": -90.62594464673137,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58062674085465,
+          "lng": -90.62594464673137
+        }
+      ],
+      "distance": 138,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2460 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d126951735",
+        "name": "Video Store",
+        "pluralName": "Video Stores",
+        "shortName": "Video Store",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/video_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bba33253db7b7138206239a",
+    "name": "Walgreens",
+    "location": {
+      "address": "100 Plaza Dr",
+      "lat": 38.58123037995799,
+      "lng": -90.62797352671623,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58123037995799,
+          "lng": -90.62797352671623
+        }
+      ],
+      "distance": 54,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "100 Plaza Dr",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d10f951735",
+        "name": "Pharmacy",
+        "pluralName": "Pharmacies",
+        "shortName": "Pharmacy",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/pharmacy_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4baf61f7f964a520d5fb3be3",
+    "name": "The Wildwood Hotel",
+    "location": {
+      "address": "2801 Fountain Pl",
+      "crossStreet": "btwn Hwy 100 & Manchester Rd",
+      "lat": 38.5813115,
+      "lng": -90.6299073,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.5813115,
+          "lng": -90.6299073
+        }
+      ],
+      "distance": 214,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2801 Fountain Pl (btwn Hwy 100 & Manchester Rd)",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1fa931735",
+        "name": "Hotel",
+        "pluralName": "Hotels",
+        "shortName": "Hotel",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/hotel_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "514cc77ce4b00b3e07b379b7",
+    "name": "Wildwood Town Center",
+    "location": {
+      "lat": 38.580895895402406,
+      "lng": -90.62623908126808,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.580895895402406,
+          "lng": -90.62623908126808
+        }
+      ],
+      "distance": 109,
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "Wildwood, MO",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d130941735",
+        "name": "Building",
+        "pluralName": "Buildings",
+        "shortName": "Building",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4e2203fe62e1964dbb6da4c2",
+    "name": "Wildwood Farms",
+    "location": {
+      "address": "2401-2447 Taylor Rd",
+      "lat": 38.580818234154044,
+      "lng": -90.62782616032167,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.580818234154044,
+          "lng": -90.62782616032167
+        }
+      ],
+      "distance": 30,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2401-2447 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d15b941735",
+        "name": "Farm",
+        "pluralName": "Farms",
+        "shortName": "Farm",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/farm_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4b1b0187f964a52043f623e3",
+    "name": "Table Three",
+    "location": {
+      "address": "16715 Main St",
+      "lat": 38.5812865209627,
+      "lng": -90.62926060074386,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.5812865209627,
+          "lng": -90.62926060074386
+        }
+      ],
+      "distance": 158,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Grover",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "16715 Main St",
+        "Grover, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1c4941735",
+        "name": "Restaurant",
+        "pluralName": "Restaurants",
+        "shortName": "Restaurant",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bdf7a04e75c0f47746fcb03",
+    "name": "Pure by Jen",
+    "location": {
+      "lat": 38.581566743272425,
+      "lng": -90.62825648705444,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.581566743272425,
+          "lng": -90.62825648705444
+        }
+      ],
+      "distance": 97,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Grover",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "Grover, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d104951735",
+        "name": "Boutique",
+        "pluralName": "Boutiques",
+        "shortName": "Boutique",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/apparel_boutique_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4b7463c2f964a5207ed92de3",
+    "name": "Dierbergs",
+    "location": {
+      "address": "2460 Taylor Rd",
+      "crossStreet": "at Highway 100",
+      "lat": 38.58033971870069,
+      "lng": -90.62601585604558,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58033971870069,
+          "lng": -90.62601585604558
+        }
+      ],
+      "distance": 144,
+      "postalCode": "63040",
+      "cc": "US",
+      "neighborhood": "Wildwood Town Center",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2460 Taylor Rd (at Highway 100)",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d118951735",
+        "name": "Grocery Store",
+        "pluralName": "Grocery Stores",
+        "shortName": "Grocery Store",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/food_grocery_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "50a2a81ae4b02fa534a9d7ea",
+    "name": "Don Gosen - State Farm Insurance Agent",
+    "location": {
+      "address": "2448 Taylor Rd",
+      "lat": 38.5811884449592,
+      "lng": -90.62717154622084,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.5811884449592,
+          "lng": -90.62717154622084
+        }
+      ],
+      "distance": 41,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2448 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "503287a291d4c4b30a586d65",
+        "name": "Financial or Legal Service",
+        "pluralName": "Financial or Legal Services",
+        "shortName": "Financial / Legal",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/financial_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4b3c10a6f964a520368125e3",
+    "name": "Ki Sushi",
+    "location": {
+      "address": "2436 Taylor Rd",
+      "lat": 38.5808823187262,
+      "lng": -90.627121925354,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.5808823187262,
+          "lng": -90.627121925354
+        }
+      ],
+      "distance": 32,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2436 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1d2941735",
+        "name": "Sushi Restaurant",
+        "pluralName": "Sushi Restaurants",
+        "shortName": "Sushi",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/food/sushi_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "532b726a498e53560f50beb1",
+    "name": "Anytime Fitness",
+    "location": {
+      "address": "2450 Taylor Rd",
+      "lat": 38.58056582,
+      "lng": -90.62709108,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58056582,
+          "lng": -90.62709108
+        }
+      ],
+      "distance": 52,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2450 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d176941735",
+        "name": "Gym",
+        "pluralName": "Gyms",
+        "shortName": "Gym",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/building/gym_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4ad7c0d8f964a5205f0e21e3",
+    "name": "El Maguey Mexican Restaurant",
+    "location": {
+      "address": "2408 Taylor Rd",
+      "crossStreet": "near Main St",
+      "lat": 38.58181485345194,
+      "lng": -90.6274107742935,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58181485345194,
+          "lng": -90.6274107742935
+        }
+      ],
+      "distance": 99,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Grover",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2408 Taylor Rd (near Main St)",
+        "Grover, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1c1941735",
+        "name": "Mexican Restaurant",
+        "pluralName": "Mexican Restaurants",
+        "shortName": "Mexican",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/food/mexican_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4b805704f964a5208a6930e3",
+    "name": "Massage Envy - Wildwood",
+    "location": {
+      "address": "2424 Taylor Rd",
+      "lat": 38.5814419,
+      "lng": -90.6256471,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.5814419,
+          "lng": -90.6256471
+        }
+      ],
+      "distance": 171,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2424 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1ed941735",
+        "name": "Spa",
+        "pluralName": "Spas",
+        "shortName": "Spa",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/spa_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4c38bb961a38ef3b8ab69221",
+    "name": "City of Wildwood",
+    "location": {
+      "lat": 38.580556401764674,
+      "lng": -90.61774950800898,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.580556401764674,
+          "lng": -90.61774950800898
+        }
+      ],
+      "distance": 849,
+      "cc": "US",
+      "state": "Missouri",
+      "country": "United States",
+      "formattedAddress": [
+        "Missouri",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "50aa9e094b90af0d42d5de0d",
+        "name": "City",
+        "pluralName": "Cities",
+        "shortName": "City",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/neighborhood_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bb63ee61344b71329349d04",
+    "name": "PNC Bank",
+    "location": {
+      "address": "179 Plaza Dr",
+      "lat": 38.58217391095774,
+      "lng": -90.62938839197159,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58217391095774,
+          "lng": -90.62938839197159
+        }
+      ],
+      "distance": 215,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "179 Plaza Dr",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d10a951735",
+        "name": "Bank",
+        "pluralName": "Banks",
+        "shortName": "Bank",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/financial_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4f401aa2e4b020398c346165",
+    "name": "Lapels",
+    "location": {
+      "address": "121 Plaza Dr",
+      "lat": 38.582010952149865,
+      "lng": -90.62812692583124,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.582010952149865,
+          "lng": -90.62812692583124
+        }
+      ],
+      "distance": 133,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "121 Plaza Dr",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1fc941735",
+        "name": "Laundry Service",
+        "pluralName": "Laundry Services",
+        "shortName": "Laundry",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/laundry_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4b229ab0f964a520ff4924e3",
+    "name": "Starbucks",
+    "location": {
+      "address": "125 Plaza Dr",
+      "lat": 38.58212340178213,
+      "lng": -90.62809627956457,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58212340178213,
+          "lng": -90.62809627956457
+        }
+      ],
+      "distance": 143,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "125 Plaza Dr",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d1e0931735",
+        "name": "Coffee Shop",
+        "pluralName": "Coffee Shops",
+        "shortName": "Coffee Shop",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4eb7e4bc6d86ba38ae1e0e3d",
+    "name": "Twist Frozen Yogurt Cafes",
+    "location": {
+      "address": "2432 Taylor Rd",
+      "lat": 38.58026167523586,
+      "lng": -90.62752962112427,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58026167523586,
+          "lng": -90.62752962112427
+        }
+      ],
+      "distance": 73,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2432 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "512e7cae91d4cbb4e5efe0af",
+        "name": "Frozen Yogurt Shop",
+        "pluralName": "Frozen Yogurt Shops",
+        "shortName": "Yogurt",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/food/frozenyogurt_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bb12e7ff964a52049813ce3",
+    "name": "Wildwood City Hall",
+    "location": {
+      "address": "16860 Main St",
+      "lat": 38.58124697649265,
+      "lng": -90.62883282974798,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58124697649265,
+          "lng": -90.62883282974798
+        }
+      ],
+      "distance": 121,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "16860 Main St",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d129941735",
+        "name": "City Hall",
+        "pluralName": "City Halls",
+        "shortName": "City Hall",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/building/cityhall_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "53f8d8ee498e83dc4ceeb7ff",
+    "name": "Milk and Honey",
+    "location": {
+      "lat": 38.58215517214857,
+      "lng": -90.62708582407406,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58215517214857,
+          "lng": -90.62708582407406
+        }
+      ],
+      "distance": 142,
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "Wildwood, MO",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "52e81612bcbc57f1066b79f1",
+        "name": "Bistro",
+        "pluralName": "Bistros",
+        "shortName": "Bistro",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4fe3602fe4b0efa3a669c121",
+    "name": "NMBS",
+    "location": {
+      "crossStreet": "Main And Taylor",
+      "lat": 38.58127890697561,
+      "lng": -90.62901930671522,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58127890697561,
+          "lng": -90.62901930671522
+        }
+      ],
+      "distance": 138,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "Main And Taylor",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d124941735",
+        "name": "Office",
+        "pluralName": "Offices",
+        "shortName": "Office",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "512436e1e4b04c1a098efffa",
+    "name": "Llywelyn's Pub",
+    "location": {
+      "address": "2490 Taylor Rd",
+      "lat": 38.58008357038781,
+      "lng": -90.62686510637145,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58008357038781,
+          "lng": -90.62686510637145
+        }
+      ],
+      "distance": 108,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2490 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d11b941735",
+        "name": "Pub",
+        "pluralName": "Pubs",
+        "shortName": "Pub",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bdf7a6a6198c9b66c7e17ff",
+    "name": "Heels Boutique",
+    "location": {
+      "address": "170 Plaza Dr",
+      "lat": 38.58123660094348,
+      "lng": -90.62871585082483,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58123660094348,
+          "lng": -90.62871585082483
+        }
+      ],
+      "distance": 111,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "170 Plaza Dr",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d107951735",
+        "name": "Shoe Store",
+        "pluralName": "Shoe Stores",
+        "shortName": "Shoes",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/apparel_shoestore_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4be22a031dd22d7f3d9c93bd",
+    "name": "Happy Go Lucky Outfitters",
+    "location": {
+      "crossStreet": "Taylor and Manchester",
+      "lat": 38.58091586687017,
+      "lng": -90.6267786026001,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58091586687017,
+          "lng": -90.6267786026001
+        }
+      ],
+      "distance": 62,
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "Wildwood, MO",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d103951735",
+        "name": "Clothing Store",
+        "pluralName": "Clothing Stores",
+        "shortName": "Apparel",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/apparel_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4c5331a8479fc928aefb1491",
+    "name": "Hair Saloon For Men",
+    "location": {
+      "address": "105 Plaza Dr",
+      "lat": 38.582050612272425,
+      "lng": -90.62803580622523,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.582050612272425,
+          "lng": -90.62803580622523
+        }
+      ],
+      "distance": 134,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "105 Plaza Dr",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d110951735",
+        "name": "Salon / Barbershop",
+        "pluralName": "Salons / Barbershops",
+        "shortName": "Salon / Barbershop",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/salon_barber_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4cd5778f89eb6dcb22dc281e",
+    "name": "Verizon Go Wireless",
+    "location": {
+      "address": "2422 Taylor Rd",
+      "lat": 38.58105919812346,
+      "lng": -90.6269192503043,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.58105919812346,
+          "lng": -90.6269192503043
+        }
+      ],
+      "distance": 52,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2422 Taylor Rd",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d122951735",
+        "name": "Electronics Store",
+        "pluralName": "Electronics Stores",
+        "shortName": "Electronics",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/technology_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4b06b514f964a520dfee22e3",
+    "name": "Clarkson Eyecare",
+    "location": {
+      "address": "2404 Taylor Rd.",
+      "crossStreet": "Manchester Rd/Hwy 100",
+      "lat": 38.581786630017355,
+      "lng": -90.62685447180317,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.581786630017355,
+          "lng": -90.62685447180317
+        }
+      ],
+      "distance": 111,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Wildwood",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "2404 Taylor Rd. (Manchester Rd/Hwy 100)",
+        "Wildwood, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4d954afda243a5684865b473",
+        "name": "Optical Shop",
+        "pluralName": "Optical Shops",
+        "shortName": "Optical",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/building/medical_opticalshop_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  },
+  {
+    "id": "4bdf8b25e75c0f4734b1cb03",
+    "name": "Hair Saloon",
+    "location": {
+      "lat": 38.582024983812076,
+      "lng": -90.6275615326102,
+      "labeledLatLngs": [
+        {
+          "label": "display",
+          "lat": 38.582024983812076,
+          "lng": -90.6275615326102
+        }
+      ],
+      "distance": 123,
+      "postalCode": "63040",
+      "cc": "US",
+      "city": "Grover",
+      "state": "MO",
+      "country": "United States",
+      "formattedAddress": [
+        "Grover, MO 63040",
+        "United States"
+      ]
+    },
+    "categories": [
+      {
+        "id": "4bf58dd8d48988d110951735",
+        "name": "Salon / Barbershop",
+        "pluralName": "Salons / Barbershops",
+        "shortName": "Salon / Barbershop",
+        "icon": {
+          "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/salon_barber_",
+          "suffix": ".png"
+        },
+        "primary": true
+      }
+    ],
+    "referralId": "v-1531974886",
+    "hasPerk": false
+  }
+]
