@@ -12,7 +12,7 @@
 <body>
 
 <header class="title-bar">
-    <!--<div>You've clicked <span data-bind='text: numberOfClicks'>&nbsp;</span> times</div>-->
+    <!--hamburger icon-->
     <div class="hamburger-container">
         <a class="hamburger" data-bind="click: toggle">
         <i class="fa fa-bars fa-2x"></i>
@@ -21,7 +21,14 @@
 
     <h1 class="neighborhood-name">Wildwood Town Center</h1>
 
+<!--nav bar starts off hidden-->
     <nav class="list-drawer" data-bind="css: {closed: isClosed}">
+        <!--search field-->
+        <form>
+            <input type="text" name="search" value="&#xf002;" placeholder="Search">
+        </form>
+
+        <!--list of venues-->
         <ul data-bind="foreach: testArray">
             <li data-bind="text: test">test2</li>
         </ul>
@@ -29,29 +36,24 @@
 
 </header>
 
-
-<div>
-    <button data-bind="click: function(){toggleActive(isActive)}, css : {'activeStyle': isActive}">Toggle Active</button>
-</div>
-
-
-<!--Map-->
-<!--<main id="maincontent">-->
-<!--<section id="map-container" aria-label="restaurant location map" role="application">-->
-<!--<div id="map" alt=""></div>-->
-<!--</section>-->
-<!--</main>-->
+Map
+<main id="maincontent">
+<section id="map-container" aria-label="restaurant location map" role="application">
+<div id="map" alt=""></div>
+</section>
+</main>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<!--Library scripts -->
+
 <script type="application/javascript" charset="utf-8" src="js/knockout-3.4.2.js"></script>
 <script src="js/main.js"></script>
 
-<!--<script async defer-->
-<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiAz-JcD_h7YvmNmjbsUKlp9s_e0a3BHQ&callback=initMap"-->
-<!--type="text/javascript"></script>-->
+<!--Library scripts -->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiAz-JcD_h7YvmNmjbsUKlp9s_e0a3BHQ&callback=initMap"
+type="text/javascript"></script>
 
 <!--Setup scripts -->
 
