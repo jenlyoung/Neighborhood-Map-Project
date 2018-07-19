@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+img, embed,
+object, video {
+    max-width: 100%;
+}
+
+body,
+html {
+    /*margin: 0;*/
+    /*padding: 0;*/
+    width: 100%;
+    height: 100%;
+}
+
+
+body, ul, li, p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #333;
+    line-height: 1.5;
+}
+
+.title-bar {
+    align-items: center;
+    border-bottom: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+}
+/*hamburger*/
+.hamburger-container {
+    width: 15%;
+}
+
+.fa-bars {
+    align-items: center;
+    padding: 10px;
+}
+
+/*Neighborhood Name*/
+.neighborhood-name {
+    width: 50%;
+    font-size: 22px;
+    padding: 0 0 0 10px;
+}
+
+
+/*List Drawer*/
+.closed {
+    display: none;
+}
+
+/*open list drawer*/
+
+.activeStyle
+{
+    background:green;
+}
+
+.open {
+    height: 20rem;
+    background-color: green;
+    display: none;
+}
