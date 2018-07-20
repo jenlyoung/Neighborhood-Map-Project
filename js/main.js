@@ -185,12 +185,15 @@ var venues = [
 // You have the three DOM elements. Two of them will have click bindings and one will have a css binding. You have one variable that represents whether the drawer is open, used in the CSS binding. The click bindings control its value. As far as Knockout is concerned, it's just this:
 
 var viewModel = {
-    isClosed: ko.observable(true),
+    isOffCanvas: ko.observable(true),
+    isOpen: ko.observable(false),
+
     toggle: function () {
-        this.isClosed(!this.isClosed());
+        this.isOffCanvas(!this.isOffCanvas());
+        this.isOpen(!this.isOpen());
     },
     close: function () {
-        this.isClosed(true);
+        this.isOffCanvas(true);
     }
 };
 

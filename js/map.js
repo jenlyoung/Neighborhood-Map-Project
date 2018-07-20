@@ -18,10 +18,12 @@ function initMap() {
     var infoWindow = new google.maps.InfoWindow();
     var bounds = new google.maps.LatLngBounds();
 
+
     for (var i = 0; i < venues.length; i++) {
         // Get the position from the location array.
         var position = venues[i].location;
         var title = venues[i].name;
+
         // Create a marker per location, and put into markers array.
         var marker = new google.maps.Marker({
             map: map,
@@ -46,8 +48,10 @@ function initMap() {
     function populateInfoWindow(marker, infoWindow) {
         // Check to make sure the infoWindow is not already opened on this marker.
         if (infoWindow.marker != marker) {
+            var venue = venues[marker.id];
+
             infoWindow.marker = marker;
-            infoWindow.setContent('<div>' + marker.title + '</div>');
+            infoWindow.setContent('<div>' + marker.title + '</div>'+ '<div>' + venue.location.address + '</div>');
             infoWindow.open(map, marker);
             // Make sure the marker property is cleared if the infoWindow is closed.
             infoWindow.addListener('closeclick', function () {

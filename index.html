@@ -11,47 +11,33 @@
 
 <body>
 
-<header class="title-bar">
+<header>
     <!--hamburger icon-->
-    <div class="hamburger-container">
-        <a class="hamburger" data-bind="click: toggle">
-            <i class="fa fa-bars fa-2x"></i>
-        </a>
-    </div>
+    <section class="title-bar">
+        <div class="hamburger-container">
+            <a class="hamburger" data-bind="click: toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </div>
 
-    <h1 class="neighborhood-name">Wildwood Town Center</h1>
-
-    <!--nav bar starts off hidden-->
-    <nav class="list-drawer" data-bind="css: {closed: isClosed}">
-        <!--search field-->
-        <form>
-            <input type="text" name="search" value="&#xf002;" placeholder="Search">
-        </form>
-
-        <!--list of venues-->
-        <ul data-bind="foreach: testArray">
-            <li data-bind="text: test">test2</li>
-        </ul>
-    </nav>
-
+        <h1 class="neighborhood-name">Wildwood Town Center</h1>
+    </section>
 </header>
 
-<!--Map-->
-<div id="map"><</div>
+<!--nav bar starts off hidden-->
+<nav class="list-drawer" data-bind="css: {offCanvas: isOffCanvas, open: isOpen}">
+    <!--search field-->
+    <form>
+        <input type="text" name="search" value="&#xf002;" placeholder="Search">
+    </form>
 
-<!--<script>-->
-    <!--&lt;!&ndash;initialize the map variable&ndash;&gt;-->
-    <!--var map;-->
-    <!--//constructor function to initialize the map-->
-    <!--function initMap() {-->
-        <!---->
-        <!--// Create new map for Wildwood Town Center-->
-        <!--map = new google.maps.Map(document.getElementById('map'), {-->
-            <!--center: {lat: 38.577047, lng: -90.667758},-->
-            <!--zoom: 13-->
-        <!--});-->
-    <!--}-->
-<!--</script>-->
+    <!--list of venues-->
+    <ul data-bind="foreach: testArray">
+        <li data-bind="text: test">test2</li>
+    </ul>
+</nav>
+<!--Map-->
+<div id="map"></div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

@@ -23,16 +23,15 @@ body, ul, li, p {
 }
 /*header*/
 .title-bar {
-    align-items: center;
-    border-bottom: 2px black solid;
     display: flex;
     flex-direction: row;
     max-width: 100%;
-
 }
+
 /*hamburger*/
 .hamburger-container {
     width: 15%;
+    align-content: center;
 }
 
 .fa-bars {
@@ -42,17 +41,39 @@ body, ul, li, p {
 
 /*Neighborhood Name*/
 .neighborhood-name {
-    width: 50%;
-    font-size: 22px;
+    width: 85%;
+    font-size: 18px;
     padding: 0 0 0 10px;
+    align-content: center;
+    margin: auto;
 }
 
+/*Nav Bar*/
+nav {
+    align-items: center;
+    border-bottom: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    max-width: 30%;
+    margin: 0;
+}
 
 /*List Drawer*/
-.closed {
-    display: none;
+.offCanvas {
+    /*display: none;*/
+    width: 150px;
+    height: 100%;
+    position: absolute;
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
 }
 
+nav.open {
+    transform: translate(0,0);
+    z-index: 999;
+    position: absolute;
+    background-color: #cccccc;
+}
 
 /*Search bar*/
 input[type=text] {
@@ -65,6 +86,21 @@ input[type=text] {
     padding: 12px 20px 12px 10px;
     font-family: FontAwesome;
 }
+
+/*venue list*/
+.list-drawer {
+    flex-direction: column;
+    max-width: 50%;
+    height: 100%;
+    border: double;
+    border-color: red;
+    z-index: 1;
+}
+
+
+
+
+
 
 
 /*map*/
