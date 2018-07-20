@@ -27,14 +27,16 @@
 <!--nav bar starts off hidden-->
 <nav class="list-drawer" data-bind="css: {offCanvas: isOffCanvas, open: isOpen}">
     <!--search field-->
-    <form>
-        <input type="text" name="search" value="&#xf002;" placeholder="Search" data-bind="value: input">
-    </form>
+    <!--<form>-->
+    <input type="text" name="search" value="&#xf002;" placeholder="Search" data-bind="textInput: userInput" >
+<!--<p data-bind="text: userInput"></p>-->
+    <!--</form>-->
 
     <!--list of venues-->
-    <ul data-bind="foreach: filtered">
-        <li data-bind="text: name">test2</li>
+    <ul data-bind="foreach: filteredItems">
+        <li data-bind="text: $data.name"></li>
     </ul>
+
 </nav>
 <!--Map-->
 <div id="map"></div>

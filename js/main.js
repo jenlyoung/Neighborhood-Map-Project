@@ -1,44 +1,117 @@
 // Model
+var venueList = [
+    {
+        "id": "4bae5b61f964a52041a73be3",
+        "name": "Wines Of Wildwood",
+        "location": {
+            "address": "2418 Taylor Rd",
+            "lat": 38.58081522239121,
+            "lng": -90.6273365020752,
+            "formattedAddress": [
+                "2418 Taylor Rd",
+                "Wildwood, MO 63040",
+                "United States"
+            ]
+        }
+    },
+    {
+        "id": "4bc360a1f8219c748fffb510",
+        "name": "One Lucky Mutt",
+        "location": {
+            "address": "2414 Taylor Rd",
+            "crossStreet": "(Manchester)",
+            "lat": 38.58127490294978,
+            "lng": -90.62694820243829,
+            "formattedAddress": [
+                "2414 Taylor Rd ((Manchester))",
+                "Wildwood, MO 63040",
+                "United States"
+            ]
+        },
+    }
+];
 
 //view
 
+var viewModel = function () {
+    //set scope
+    var self = this;
 
-// You have the three DOM elements. Two of them will have click bindings and one will have a css binding. You have one variable that represents whether the drawer is open, used in the CSS binding. The click bindings control its value. As far as Knockout is concerned, it's just this:
+    //initialize venue list for use
 
-var viewModel = {
-    isOffCanvas: ko.observable(true),
-    isOpen: ko.observable(false),
-    venues: ko.observableArray([]),
-    toggle: function () {
-        this.isOffCanvas(!this.isOffCanvas());
-        this.isOpen(!this.isOpen());
-    },
-    close: function () {
-        this.isOffCanvas(true);
-    },
-    input: ko.observable(''),
-    filtered: ko.computed(function () {
-      /*if(!this.input()){
-          return this.venues();
-      }
-      else{
-          return this.venues.slice(1,3);
-      }*/
-    }),
-    init: function () {
-        fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
-            .then(response => response.json())
-            .then(data => {
-                this.venues(data.response.venues);
-            }).catch(error => {
-            console.log(`Foursquare Error: ${error.message}`);
+    self.venueNames = ko.observableArray(venueList);
+
+    //user input in observable
+    self.userInput = ko.observable('');
+
+
+    //toggle menu off campus
+    self.isOffCanvas = ko.observable(true),
+    self.isOpen= ko.observable(false),
+    self.toggle = function () {
+        self.isOffCanvas(!self.isOffCanvas());
+        self.isOpen(!self.isOpen());
+    };
+
+    //behaviors
+    //clicking on venue list items
+    self.selectedVenue = function () {
+        alert("it worked");
+        // populateInfoWindow();
+    };
+
+    // filter the venue name in menu no matter the case
+    self.filteredItems = ko.computed(function() {
+        var filteredVenues = self.userInput();
+        if (!filteredVenues) { return self.venueNames(); }
+        return self.venueNames().filter(function(venue) {
+            return venue.name.toLowerCase().indexOf(filteredVenues.toLocaleLowerCase()) > -1;
         });
-    }
+    });
+
+
+
+
+
+
+
+    //placing markers
+    // self.filterMarkers = function () {
+    //
+    // }
+
+    // creating info window content
+    self.infoWindowContentMaker = function () {
+        populateInfoWindow(self.selectedVenue);
+    };
+
+
+
+
+    // input: ko.observable(''),
+    // filtered: ko.computed(function () {
+    //   /*if(!this.input()){
+    //       return this.venues();
+    //   }
+    //   else{
+    //       return this.venues.slice(1,3);
+    //   }*/
+    // }),
+    // init: function () {
+    //     fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             this.venues(data.response.venues);
+    //         }).catch(error => {
+    //         console.log(`Foursquare Error: ${error.message}`);
+    //     });
+    // }
 };
+
 
 ko.applyBindings(viewModel);
 
-viewModel.init();
+
 
 //
 // var viewModel = function(){
@@ -78,3 +151,5 @@ viewModel.init();
 // };
 //
 // ko.applyBindings(new ClickCounterViewModel());
+
+

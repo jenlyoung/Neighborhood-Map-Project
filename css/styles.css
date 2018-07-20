@@ -50,12 +50,14 @@ body, ul, li, p {
 
 /*Nav Bar*/
 nav {
-    align-items: center;
+    /*align-items: center;*/
     border-bottom: 2px black solid;
     display: flex;
     flex-direction: row;
     max-width: 30%;
     margin: 0;
+    text-align: left;
+
 }
 
 /*List Drawer*/
@@ -96,6 +98,18 @@ input[type=text] {
     border-color: red;
     z-index: 1;
 }
+
+ul {
+    list-style-type: none;
+    /*text-align: left;*/
+}
+
+.selected {
+    background-color: green;
+}
+
+
+
 
 
 

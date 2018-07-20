@@ -18,15 +18,16 @@ function initMap() {
     var infoWindow = new google.maps.InfoWindow();
     var bounds = new google.maps.LatLngBounds();
 
-    viewModel.venues.subscribe(function (venues) {
+    // viewModel.venueList.subscribe(function (venueList) {
 
-        for (var i = 0; i < venues.length; i++) {
+        for (var i = 0; i < venueList.length; i++) {
             // Get the position from the location array.
             var position = {
-                lat: venues[i].location.lat,
-                lng: venues[i].location.lng
+                lat: venueList[i].location.lat,
+                lng: venueList[i].location.lng
             };
-            var title = venues[i].name;
+
+            var title = venueList[i].name;
 
             // Create a marker per location, and put into markers array.
             var marker = new google.maps.Marker({
@@ -48,15 +49,16 @@ function initMap() {
         }
 
         map.fitBounds(bounds);
-    });
-}
+    }
+
     function populateInfoWindow(marker, infoWindow) {
         // Check to make sure the infoWindow is not already opened on this marker.
         if (infoWindow.marker != marker) {
-            var venue = viewModel.venues[marker.id];
+            // var venue = viewModel.venueList[marker.id];
 
             infoWindow.marker = marker;
-            infoWindow.setContent('<div>' + marker.title + '</div>'+ '<div>' + venue.location.address + '</div>');
+            infoWindow.setContent('<div>' + marker.title + '</div>');
+            infoWindow.setContent('test');
             infoWindow.open(map, marker);
             // Make sure the marker property is cleared if the infoWindow is closed.
             infoWindow.addListener('closeclick', function () {
