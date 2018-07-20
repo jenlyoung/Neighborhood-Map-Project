@@ -18,37 +18,42 @@ function initMap() {
     var infoWindow = new google.maps.InfoWindow();
     var bounds = new google.maps.LatLngBounds();
 
+    viewModel.venues.subscribe(function (venues) {
 
-    for (var i = 0; i < venues.length; i++) {
-        // Get the position from the location array.
-        var position = venues[i].location;
-        var title = venues[i].name;
+        for (var i = 0; i < venues.length; i++) {
+            // Get the position from the location array.
+            var position = {
+                lat: venues[i].location.lat,
+                lng: venues[i].location.lng
+            };
+            var title = venues[i].name;
 
-        // Create a marker per location, and put into markers array.
-        var marker = new google.maps.Marker({
-            map: map,
-            position: position,
-            title: title,
-            animation: google.maps.Animation.DROP,
-            id: i
-        });
+            // Create a marker per location, and put into markers array.
+            var marker = new google.maps.Marker({
+                map: map,
+                position: position,
+                title: title,
+                animation: google.maps.Animation.DROP,
+                id: i
+            });
 
-        // Push the marker to our array of markers.
-        markers.push(marker);
-        // Create an onclick event to open an infoWindow at each marker.
-        marker.addListener('click', function () {
-            populateInfoWindow(this, infoWindow);
-        });
+            // Push the marker to our array of markers.
+            markers.push(marker);
+            // Create an onclick event to open an infoWindow at each marker.
+            marker.addListener('click', function () {
+                populateInfoWindow(this, infoWindow);
+            });
 
-        bounds.extend(markers[i].position);
-    }
+            bounds.extend(markers[i].position);
+        }
 
-    map.fitBounds(bounds);
+        map.fitBounds(bounds);
+    });
 }
     function populateInfoWindow(marker, infoWindow) {
         // Check to make sure the infoWindow is not already opened on this marker.
         if (infoWindow.marker != marker) {
-            var venue = venues[marker.id];
+            var venue = viewModel.venues[marker.id];
 
             infoWindow.marker = marker;
             infoWindow.setContent('<div>' + marker.title + '</div>'+ '<div>' + venue.location.address + '</div>');

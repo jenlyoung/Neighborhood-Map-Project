@@ -7,7 +7,7 @@ var testArray = [
     {test: "four"}
 ];
 
-var venues = [
+var venuess = [
     {
         "id": "4bae5b61f964a52041a73be3",
         "name": "Wines Of Wildwood",
@@ -187,17 +187,33 @@ var venues = [
 var viewModel = {
     isOffCanvas: ko.observable(true),
     isOpen: ko.observable(false),
-
+    venues: ko.observable([]),
     toggle: function () {
         this.isOffCanvas(!this.isOffCanvas());
         this.isOpen(!this.isOpen());
     },
     close: function () {
         this.isOffCanvas(true);
+    },
+    filter: function (e) {
+      console.log(arguments);
+    },
+    init: function () {
+        fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
+            .then(response => response.json())
+            .then(data => {
+                this.venues(data.response.venues);
+            }).catch(error => {
+            console.log(`Foursquare Error: ${error.message}`);
+        });
     }
 };
 
 ko.applyBindings(viewModel);
+
+viewModel.init();
+
+
 //
 // var viewModel = function(){
 //     var self = this;
