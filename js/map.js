@@ -12,10 +12,11 @@ function initMap() {
     // Constructor creates a new map - only center and zoom are required.
     map = new google.maps.Map(document.getElementById('map'), {
         center: wildwoodLatLng,
-        zoom: 15,
+        zoom: 10,
     });
 
     var infoWindow = new google.maps.InfoWindow();
+    var bounds = new google.maps.LatLngBounds();
 
     for (var i = 0; i < venues.length; i++) {
         // Get the position from the location array.
@@ -25,7 +26,7 @@ function initMap() {
         var marker = new google.maps.Marker({
             map: map,
             position: position,
-            title: name,
+            title: title,
             animation: google.maps.Animation.DROP,
             id: i
         });
@@ -36,8 +37,12 @@ function initMap() {
         marker.addListener('click', function () {
             populateInfoWindow(this, infoWindow);
         });
+
+        bounds.extend(markers[i].position);
     }
 
+    map.fitBounds(bounds);
+}
     function populateInfoWindow(marker, infoWindow) {
         // Check to make sure the infoWindow is not already opened on this marker.
         if (infoWindow.marker != marker) {
@@ -50,5 +55,5 @@ function initMap() {
             });
         }
     }
-}
+
 
