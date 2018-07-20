@@ -8,8 +8,8 @@ object, video {
 
 body,
 html {
-    /*margin: 0;*/
-    /*padding: 0;*/
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
 }
@@ -21,7 +21,7 @@ body, ul, li, p {
     color: #333;
     line-height: 1.5;
 }
-
+/*header*/
 .title-bar {
     align-items: center;
     border-bottom: 2px black solid;
@@ -64,4 +64,11 @@ input[type=text] {
     background-color: white;
     padding: 12px 20px 12px 10px;
     font-family: FontAwesome;
+}
+
+
+/*map*/
+
+#map{
+    height: 100%;
 }

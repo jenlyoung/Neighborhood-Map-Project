@@ -15,13 +15,13 @@
     <!--hamburger icon-->
     <div class="hamburger-container">
         <a class="hamburger" data-bind="click: toggle">
-        <i class="fa fa-bars fa-2x"></i>
+            <i class="fa fa-bars fa-2x"></i>
         </a>
     </div>
 
     <h1 class="neighborhood-name">Wildwood Town Center</h1>
 
-<!--nav bar starts off hidden-->
+    <!--nav bar starts off hidden-->
     <nav class="list-drawer" data-bind="css: {closed: isClosed}">
         <!--search field-->
         <form>
@@ -36,12 +36,22 @@
 
 </header>
 
-Map
-<main id="maincontent">
-<section id="map-container" aria-label="restaurant location map" role="application">
-<div id="map" alt=""></div>
-</section>
-</main>
+<!--Map-->
+<div id="map"><</div>
+
+<!--<script>-->
+    <!--&lt;!&ndash;initialize the map variable&ndash;&gt;-->
+    <!--var map;-->
+    <!--//constructor function to initialize the map-->
+    <!--function initMap() {-->
+        <!---->
+        <!--// Create new map for Wildwood Town Center-->
+        <!--map = new google.maps.Map(document.getElementById('map'), {-->
+            <!--center: {lat: 38.577047, lng: -90.667758},-->
+            <!--zoom: 13-->
+        <!--});-->
+    <!--}-->
+<!--</script>-->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -49,11 +59,15 @@ Map
 
 <script type="application/javascript" charset="utf-8" src="js/knockout-3.4.2.js"></script>
 <script src="js/main.js"></script>
+<script src="js/map.js"></script>
 
 <!--Library scripts -->
+<!--<script async defer-->
+<!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiAz-JcD_h7YvmNmjbsUKlp9s_e0a3BHQ&callback=initMap"-->
+<!--type="text/javascript"></script>-->
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiAz-JcD_h7YvmNmjbsUKlp9s_e0a3BHQ&callback=initMap"
-type="text/javascript"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiAz-JcD_h7YvmNmjbsUKlp9s_e0a3BHQ&v=3&callback=initMap">
+</script>
 
 <!--Setup scripts -->
 
