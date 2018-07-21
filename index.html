@@ -34,7 +34,7 @@
 
     <!--list of venues-->
     <ul data-bind="foreach: filteredItems">
-        <li data-bind="text: $data.name"></li>
+        <li data-bind="text: $data.name, click: $parent.selectVenue"></li>
     </ul>
 
 </nav>

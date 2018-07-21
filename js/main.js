@@ -33,7 +33,7 @@ var venueList = [
 
 //view
 
-var viewModel = function () {
+var ViewModel = function () {
     //set scope
     var self = this;
 
@@ -44,7 +44,6 @@ var viewModel = function () {
     //user input in observable
     self.userInput = ko.observable('');
 
-
     //toggle menu off campus
     self.isOffCanvas = ko.observable(true),
     self.isOpen= ko.observable(false),
@@ -54,11 +53,8 @@ var viewModel = function () {
     };
 
     //behaviors
-    //clicking on venue list items
-    self.selectedVenue = function () {
-        alert("it worked");
-        // populateInfoWindow();
-    };
+    //Observable of the selected venue
+    var selectedVenue = ko.observable();
 
     // filter the venue name in menu no matter the case
     self.filteredItems = ko.computed(function() {
@@ -69,87 +65,63 @@ var viewModel = function () {
         });
     });
 
-
-
-
-
-
-
-    //placing markers
-    // self.filterMarkers = function () {
-    //
-    // }
-
-    // creating info window content
-    self.infoWindowContentMaker = function () {
-        populateInfoWindow(self.selectedVenue);
+    //Used to select the venue and update the observable - Used in index and map
+    self.selectVenue = function (venue) {
+        selectedVenue(venue);
     };
 
+    //Subscription for changes to the selected venue
+    selectedVenue.subscribe(function (venue) {
+        if(!self.infoWindow){
+            self.infoWindow = new google.maps.InfoWindow();
+        }
 
+        var marker = venue.marker;
+        var infoWindow = self.infoWindow;
 
+        // Check to make sure the infoWindow is not already opened on this marker.
+        if (infoWindow.marker != marker) {
+            //close previous marker
+            infoWindow.marker = null;
+            // var venue = viewModel.venueList[marker.id];
 
-    // input: ko.observable(''),
-    // filtered: ko.computed(function () {
-    //   /*if(!this.input()){
-    //       return this.venues();
-    //   }
-    //   else{
-    //       return this.venues.slice(1,3);
-    //   }*/
-    // }),
-    // init: function () {
-    //     fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             this.venues(data.response.venues);
-    //         }).catch(error => {
-    //         console.log(`Foursquare Error: ${error.message}`);
-    //     });
-    // }
+            infoWindow.marker = marker;
+            // infoWindow.setContent('<div>' + marker.title + '</div>');
+            infoWindow.setContent(venue.name);
+            infoWindow.open(map, marker);
+            // Make sure the marker property is cleared if the infoWindow is closed.
+            infoWindow.addListener('closeclick', function () {
+                infoWindow.marker = null;
+            });
+        }
+    });
 };
 
-
+var viewModel = new ViewModel();
 ko.applyBindings(viewModel);
 
 
 
-//
-// var viewModel = function(){
-//     var self = this;
-//     self.isActive = ko.observable(false);
-//     self.isClosed = ko.observable(false);
-//
-//     self.toggleActive = function(data){
-//         data(!data());//toggle the isActive value between true/false
-//     };
-//
-//     self.toggleClosed = function(data){
-//         data(!data());
-//     };
+
+
+
+// input: ko.observable(''),
+// filtered: ko.computed(function () {
+//   /*if(!this.input()){
+//       return this.venues();
+//   }
+//   else{
+//       return this.venues.slice(1,3);
+//   }*/
+// }),
+// init: function () {
+//     fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
+//         .then(response => response.json())
+//         .then(data => {
+//             this.venues(data.response.venues);
+//         }).catch(error => {
+//         console.log(`Foursquare Error: ${error.message}`);
+//     });
 // }
-
-// var myModel = new viewModel();
-//
-// ko.applyBindings(myModel);
-
-
-// var ClickCounterViewModel = function() {
-//     this.numberOfClicks = ko.observable(0);
-//
-//     this.registerClick = function() {
-//         this.numberOfClicks(this.numberOfClicks() + 1);
-//
-//     };
-//
-//     this.resetClicks = function() {
-//         this.numberOfClicks(0);
-//     };
-//
-//     this.hasClickedTooManyTimes = ko.computed(function() {
-//         return this.numberOfClicks() >= 3;
-//     }, this);
-// };
-//
-// ko.applyBindings(new ClickCounterViewModel());
 
 
