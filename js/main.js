@@ -1,5 +1,4 @@
-//view
-
+//below is the knockout code
 class ViewModel {
     constructor() {
         //set scope
@@ -12,14 +11,12 @@ class ViewModel {
         self.userInput = ko.observable('');
 
         //toggle menu off campus
-        self.isOffCanvas = ko.observable(true),
-            self.isOpen = ko.observable(false);
-
-
+        self.isOffCanvas = ko.observable(true);
+        self.isOpen = ko.observable(false);
         self.toggle = function () {
             self.isOffCanvas(!self.isOffCanvas());
             self.isOpen(!self.isOpen());
-        }
+        };
 
         // filter the venue name in menu no matter the case
         self.filteredItems = ko.computed(() => {
@@ -42,9 +39,7 @@ class ViewModel {
         //Observable of venue by user
         self.selectedVenue = ko.observable();
 
-        //Used to select the venue and update the observable - Used in index and map
-
-        //Subscription for changes to the selected venue
+        //Subscription to look for changes to the selected venue and filtered Items
         self.selectedVenue.subscribe(this.createInfoWindow, self);
         self.filteredItems.subscribe(this.createMarkers, self);
 
@@ -55,8 +50,10 @@ class ViewModel {
                 self.venueList(data.response.venues);
             }).catch(error => {
             console.log(`Foursquare Error: ${error.message}`);
+            alert(`Foursquare Error: ${error.message}`);
         });
 
+        //sets the selected venue
         self.selectVenue = function (venue) {
             //creating animation on select
             const marker = venue.marker;
@@ -68,10 +65,9 @@ class ViewModel {
             //set the selectedVenue observable
             self.selectedVenue(venue);
         };
-
     }
 
-
+    //create info window
     createInfoWindow(venue) {
         if (!this.infoWindow) {
             this.infoWindow = new google.maps.InfoWindow();
@@ -98,6 +94,7 @@ class ViewModel {
         }
     }
 
+    //create markers
     createMarkers(list) {
         if (!this.bounds) {
             this.bounds = new google.maps.LatLngBounds();
