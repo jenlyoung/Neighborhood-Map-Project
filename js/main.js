@@ -13,10 +13,10 @@ class ViewModel {
 
         //toggle menu off campus
         self.isOffCanvas = ko.observable(true),
-            self.isOpen= ko.observable(false);
+            self.isOpen = ko.observable(false);
 
 
-        self.toggle = function (){
+        self.toggle = function () {
             self.isOffCanvas(!self.isOffCanvas());
             self.isOpen(!self.isOpen());
         }
@@ -24,12 +24,14 @@ class ViewModel {
         // filter the venue name in menu no matter the case
         self.filteredItems = ko.computed(() => {
             let filteredVenues = self.userInput();
-            if (!filteredVenues) { return self.venueList(); }
+            if (!filteredVenues) {
+                return self.venueList();
+            }
             return self.venueList().filter(venue => {
-                if(venue.name.toLowerCase().indexOf(filteredVenues.toLocaleLowerCase()) > -1){
+                if (venue.name.toLowerCase().indexOf(filteredVenues.toLocaleLowerCase()) > -1) {
                     return true;
                 }
-                if(venue.marker) {
+                if (venue.marker) {
                     venue.marker.setMap(null);
                     venue.marker = null;
                 }
@@ -55,7 +57,7 @@ class ViewModel {
             console.log(`Foursquare Error: ${error.message}`);
         });
 
-        self.selectVenue = function(venue) {
+        self.selectVenue = function (venue) {
             //creating animation on select
             const marker = venue.marker;
             if (marker.getAnimation() !== null) {
@@ -70,9 +72,8 @@ class ViewModel {
     }
 
 
-
     createInfoWindow(venue) {
-        if(!this.infoWindow){
+        if (!this.infoWindow) {
             this.infoWindow = new google.maps.InfoWindow();
         }
 
@@ -88,7 +89,7 @@ class ViewModel {
             // var venue = viewModel.venueList[marker.id];
 
             infoWindow.marker = marker;
-            infoWindow.setContent(`${venue.name}<br/>${venue.location.address}`);
+            infoWindow.setContent(`<strong>${venue.name}</strong><br/>${venue.location.address || ''}<br/>${venue.location.city || ''}, ${venue.location.state || ''} ${venue.location.postalCode || ''}`);
             infoWindow.open(map, marker);
             // Make sure the marker property is cleared if the infoWindow is closed.
             infoWindow.addListener('closeclick', () => {
@@ -98,7 +99,7 @@ class ViewModel {
     }
 
     createMarkers(list) {
-        if(!this.bounds){
+        if (!this.bounds) {
             this.bounds = new google.maps.LatLngBounds();
         }
 
@@ -106,7 +107,7 @@ class ViewModel {
             let self = this;
             // Get the position from the location array.
             let venue = list[i];
-            if(venue.marker){
+            if (venue.marker) {
                 continue;
             }
             const position = {
