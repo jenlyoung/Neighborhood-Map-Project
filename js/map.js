@@ -15,11 +15,13 @@ function initMap() {
 
     var bounds = new google.maps.LatLngBounds();
 
-    // viewModel.venueList.subscribe(function (venueList) {
-
-        for (var i = 0; i < venueList.length; i++) {
+    viewModel.filteredItems.subscribe(function (list) {
+        for (var i = 0; i < list.length; i++) {
             // Get the position from the location array.
-            let venue = venueList[i];
+            let venue = list[i];
+            if(venue.marker){
+                continue;
+            }
             var position = {
                 lat: venue.location.lat,
                 lng: venue.location.lng
@@ -36,8 +38,6 @@ function initMap() {
                 id: i
             });
 
-            // Push the marker to our array of markers.
-
             //add marker to the model
             venue.marker = marker;
             // Create an onclick event to open an infoWindow at each marker.
@@ -49,6 +49,7 @@ function initMap() {
         }
 
         map.fitBounds(bounds);
-    }
+    });
+}
 
 
