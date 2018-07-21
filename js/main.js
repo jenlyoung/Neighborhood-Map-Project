@@ -19,10 +19,10 @@ var ViewModel = function () {
     };
 
     // filter the venue name in menu no matter the case
-    self.filteredItems = ko.computed(function() {
+    self.filteredItems = ko.computed(() => {
         var filteredVenues = self.userInput();
         if (!filteredVenues) { return self.venueList(); }
-        return self.venueList().filter(function(venue) {
+        return self.venueList().filter(venue => {
             if(venue.name.toLowerCase().indexOf(filteredVenues.toLocaleLowerCase()) > -1){
                 return true;
             }
@@ -82,7 +82,7 @@ ViewModel.prototype.createInfoWindow = function (venue) {
         // var venue = viewModel.venueList[marker.id];
 
         infoWindow.marker = marker;
-        infoWindow.setContent(venue.name);
+        infoWindow.setContent(`${venue.name}<br/>${venue.location.address}`);
         infoWindow.open(map, marker);
         // Make sure the marker property is cleared if the infoWindow is closed.
         infoWindow.addListener('closeclick', function () {

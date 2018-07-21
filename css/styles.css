@@ -52,29 +52,35 @@ body, ul, li, p {
 nav {
     /*align-items: center;*/
     border-bottom: 2px black solid;
-    display: flex;
-    flex-direction: row;
-    max-width: 30%;
+    display: none;
     margin: 0;
     text-align: left;
-
+    flex-direction: column;
+    max-width: 50%;
+    height: 100%;
+    z-index: 1;
 }
 
 /*List Drawer*/
-.offCanvas {
+nav.close {
     /*display: none;*/
-    width: 150px;
+    display: flex;
+    width: 50%;
     height: 100%;
     position: absolute;
     transform: translate(-300px, 0);
-    transition: transform 0.3s ease;
+    transition: transform 1.3s ease;
 }
 
 nav.open {
+    display: flex;
+    width: 50%;
     transform: translate(0,0);
     z-index: 999;
     position: absolute;
     background-color: #cccccc;
+    transition: transform 1.3s ease;
+
 }
 
 /*Search bar*/
@@ -87,16 +93,6 @@ input[type=text] {
     background-color: white;
     padding: 12px 20px 12px 10px;
     font-family: FontAwesome;
-}
-
-/*venue list*/
-.list-drawer {
-    flex-direction: column;
-    max-width: 50%;
-    height: 100%;
-    border: double;
-    border-color: red;
-    z-index: 1;
 }
 
 ul {
