@@ -121,6 +121,7 @@ li {
 
 li:hover{
     color: dodgerblue;
+    cursor: pointer;
 }
 
 .selected {
