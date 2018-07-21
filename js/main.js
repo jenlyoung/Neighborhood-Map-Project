@@ -51,7 +51,8 @@ var ViewModel = function () {
     };
 
     //Subscription for changes to the selected venue
-    selectedVenue.subscribe(this.createInfoWindow);
+    selectedVenue.subscribe(this.createInfoWindow, self);
+    self.filteredItems.subscribe(this.createMarkers, self);
 
     //api request to get json data on 10 venues only
     fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
@@ -90,26 +91,45 @@ ViewModel.prototype.createInfoWindow = function (venue) {
     }
 };
 
-var viewModel = new ViewModel();
-ko.applyBindings(viewModel);
+ViewModel.prototype.createMarkers = function (list){
+    if(!this.bounds){
+        this.bounds = new google.maps.LatLngBounds();
+    }
 
-// input: ko.observable(''),
-// filtered: ko.computed(function () {
-//   /*if(!this.input()){
-//       return this.venues();
-//   }
-//   else{
-//       return this.venues.slice(1,3);
-//   }*/
-// }),
-// init: function () {
-//     fetch("https://api.foursquare.com/v2/venues/search?ll=38.580920,-90.627496&client_id=MQX5FUOOHIIQGWJVLXMC20VRP25LLJK3IUF2DC2TPHCHZUYX&client_secret=WMVDF05UPTVWPPSNP2YKUOTQ33YK5Q5E41C50MFSWMTWQXCH&v=20180718&limit=10")
-//         .then(response => response.json())
-//         .then(data => {
-//             this.venues(data.response.venues);
-//         }).catch(error => {
-//         console.log(`Foursquare Error: ${error.message}`);
-//     });
-// }
+    for (var i = 0; i < list.length; i++) {
+        var self = this;
+        // Get the position from the location array.
+        let venue = list[i];
+        if(venue.marker){
+            continue;
+        }
+        var position = {
+            lat: venue.location.lat,
+            lng: venue.location.lng
+        };
+
+        var title = venue.name;
+
+        // Create a marker per location, and put into markers array.
+        var marker = new google.maps.Marker({
+            map: map,
+            position: position,
+            title: title,
+            animation: google.maps.Animation.DROP,
+            id: i
+        });
+
+        //add marker to the model
+        venue.marker = marker;
+        // Create an onclick event to open an infoWindow at each marker.
+        marker.addListener('click', function () {
+            self.selectVenue(venue);
+        });
+
+        this.bounds.extend(marker.position);
+    }
+
+    map.fitBounds(this.bounds);
+}
 
 
